@@ -1,0 +1,552 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 14, 2018, 11:39:57 AM
+    Author     : pedro
+*/
+
+.bg-green {
+    background-color: blue;
+}
+ul.navbar-nav > li.nav-item.active {
+    color: blue;
+}
+ul.navbar-nav > li.nav-item.active > a:before {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    content: "";
+    border-top: 5px solid blue;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    margin-left: -5px;
+}
+
+ul.navbar-nav > li.nav-item:hover > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background: blue;
+}
+
+
+ul.navbar-nav > li.nav-item.active > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background: blue;
+}
+
+nav .nav-link:hover {
+    color: blue;
+}
+ul.navbar-nav > li.nav-item.active > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background: blue;
+}
+
+
+ul.navbar-nav > li.nav-item:hover > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background: blue;
+}
+
+ul.navbar-nav > li.nav-item:hover > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background: blue;
+}
+
+ul.navbar-nav > li.nav-item.active > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background: blue;
+}
+ul.tw-dropdown-menu li.active > a {
+    color: blue;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: blue;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: blue;
+}
+ul.navbar-nav > li.nav-item:hover > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background: blue;
+}
+.navbar-light .navbar-toggler {
+    border-color: blue;
+    background-color: blue;
+}
+
+.top_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -60px;
+}
+.slider-content h1{
+    color: orange;
+}
+.slider-content h1 span{
+    color: red;
+}
+.slider-content .slider-desc{
+    color: orange;
+}
+#first_aptech{
+    background-image: url("../images/pimg/afri_student.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: orange;
+    
+        
+}
+#second_aptech{
+    background-image: url("../images/pimg/aptech_student.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: orange;
+    
+        
+}
+#aptech_logo img{
+    margin-right: -60px;
+}
+
+.slider-items {
+    height: 500px;
+    
+    background-color: #f5f5f5;
+}
+.cdesc{
+    
+    
+}
+#first_aptech .row{
+    height: 47%;
+}
+
+.features-icon-inner img{
+    width: 70%;
+    height: 40px;
+}
+
+.column-title span {
+    color: #005cbf;
+}
+
+.column-title:after {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    left: 0;
+    width: 65px;
+    height: 3px;
+    background: #005cbf;
+}
+.btn-primary {
+  border: 1px solid #005cbf;
+  background: #005cbf;
+}
+.btn-primary:hover {
+  background: #f5f5f5;
+  border-color: #005cbf;
+  color: #005cbf;
+}
+.section-heading h2 span {
+    color: #005cbf;
+}
+.section-heading h2:after {
+    position: absolute;
+    bottom: -23px;
+    width: 65px;
+    height: 3px;
+    content: "";
+    background: #005cbf;
+    left: 50%;
+    margin-left: -34px;
+}
+
+.study-bg-1 {
+    background: #fff
+}
+
+.img_size{
+    width: 200px;
+    height: 180px !important;
+}
+.casestudy-content {
+    background:#DCDCDC;
+    padding: 21px 30px 6px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+ul.navbar-nav > li.nav-item.active {
+    color: blue;
+}
+
+ul.navbar-nav > li.nav-item.active {
+    color: blue;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: blue;
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: blue;
+}
+
+span.tw-indicator:after {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.tw-social-links {
+  position: relative;
+}
+.tw-social-links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.tw-social-links li {
+  display: inline-block;
+  padding-left: 20px;
+}
+.tw-social-links a {
+  display: block;
+  font-size: 14px;
+  color: blue;
+}
+.tw-social-links a:hover {
+  color: blue;
+}
+.bottom_margin{
+    margin-bottom: 6px;
+}
+.cisco_banner_area{
+    position: relative;
+    color: #fff;
+    background-image: url("../../../../images/newslide/Cisco.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.widget h5:after {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 65px;
+  height: 3px;
+  content: "";
+  background: blue;
+}
+
+.widget ul.widget-list li:hover a,
+.widget ul.widget-list li:hover span {
+  color: blue;
+}
+.entry-header .entry-title a:hover {
+  color: blue;
+}
+.logo-small-list img{
+    width: 76px;
+    height: 79px;
+}
+.aptech_banner_area{
+    position: relative;
+    color: #fff;
+    background-image: url("../../../../images/pimg/comp_edu.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+.wall_logo{
+    
+
+}
+
+.pdc_banner_area{
+    position: relative;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../../../../images/newslide/RTR2DNV8.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.pdc_banner_area1{
+    position: relative;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../../../../images/pimg/idf_wall1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+}
+
+.kids_banner_area{
+    position: relative;
+    color: #fff;
+    background-image: url("../../../../images/pimg/little_boy.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+section {
+    padding: 10px 0;
+    position: relative;
+}
+.idf_banner_area{
+    position: relative;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../../../../images/pimg/idf_wall1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Eqnuiry
+============================== */
+/* Intro */
+.comment-border {
+  border: 1px solid #F1F1F1;
+  padding: 2px auto;
+  background-color: #F1F1F1;
+}
+
+.title-normal {
+  padding: 40px 0 35px;
+  font-size: 24px;
+}
+caption{
+    caption-side: top;
+    color: orangered;
+}
+.comments-form input {
+  padding: 16px 30px;
+  border-radius: 3px;
+}
+.comments-form textarea {
+  border-radius: 3px;
+  resize: none;
+  padding: 30px;
+  border: 3px solid #F1F1F1;
+}
+.comments-form input {
+  border: 1px solid #F1F1F1;
+}
+.comments-form textarea::-webkit-input-placeholder,
+.comments-form input::-webkit-input-placeholder,
+.comments-form textarea::-moz-placeholder,
+.comments-form input::-moz-placeholder,
+.comments-form textarea:-ms-input-placeholder,
+.comments-form input:-ms-input-placeholder,
+.comments-form textarea::-ms-input-placeholder,
+.comments-form input::-ms-input-placeholder,
+.comments-form textarea::-webkit-input-placeholder,
+.comments-form input::-webkit-input-placeholder {
+  color: #6d6d6d;
+}
+.comments-form textarea::-webkit-input-placeholder,
+.comments-form input::-webkit-input-placeholder,
+.comments-form textarea::-moz-placeholder,
+.comments-form input::-moz-placeholder,
+.comments-form textarea:-ms-input-placeholder,
+.comments-form input:-ms-input-placeholder,
+.comments-form textarea::-ms-input-placeholder,
+.comments-form input::-ms-input-placeholder,
+.comments-form textarea::placeholder,
+.comments-form input::placeholder {
+  color: #6d6d6d;
+}
+.comments-form textarea:focus,
+.comments-form input:focus {
+  outline: 0;
+  border-color: #F1F1F1;
+}
+.comments-form button {
+  margin-top: 20px;
+}
+.comments-form button:hover {
+  cursor: pointer;
+}
+.footer-contact-info li span i {
+    font-size: 30px;
+    color: blue;
+}
+.footer-widget h3:after {
+    position: absolute;
+    bottom: -25px;
+    width: 65px;
+    height: 3px;
+    content: "";
+    background: blue;
+    left: 0;
+}
+.tw-footer-form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 24px 12px 17px;
+    border: 1px solid blue;
+    background: blue;
+    color: #fff;
+}
+.back-to-top .btn-dark:hover {
+  cursor: pointer;
+  background: blue;
+  border-color: blue;
+}
+.banner-title2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+  width: 100%;
+}
+.contact_us_banner-area{
+    position: relative;
+    color: #fff;
+    background-image: url("../../../../images/pimg/contactus.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#infon{
+    width: 200px;
+    height: 40px;
+    
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #2e2e2e;
+    border-color: #2e2e2e;
+    display: none;
+    z-index: 1999;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-color: blue;
+    border-radius: 8px;
+    text-align: center;
+}
+#infon p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.jamb_banner_area{
+    position: relative;
+    color: #fff;
+    background-image: url("../../../../images/pimg/jamb_wall.JPG");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: rgba(211,211,211, 1);
+   color: white;
+}
+.table-striped > thead > tr > th {
+    background-color: red;
+    color: white;
+}
+.tw-testimonial {
+    padding-bottom: 25px;
+    background: #f7f7f7 url("../../../../images/pimg/black_system.jpg");                          
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+.footer-contact {
+    border-bottom: 1px solid #373636;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  }
+
+.pl_class::-webkit-input-placeholder {
+    color: red;
+}
+
+#third_aptech{
+    background-image: url("../../../../images/pimg/nysc_Img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: orange;
+    
+        
+}
+
+.nysc_banner_area{
+    position: relative;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../../../../images/pimg/nysc_piit.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
