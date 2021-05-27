@@ -200,7 +200,11 @@ function insertPost(event){
     let route = document.getElementById('route').value;
     let form = document.getElementById("postForm");
     let form_data = new FormData(form);
-        
+    
+    // for(let [name, value] of form_data) {
+    //     console.log(`${name} = ${value}`);
+    //   }
+    
     $.ajax({
         url:route,
         method:"post",
@@ -211,14 +215,18 @@ function insertPost(event){
             console.log(res);
             if(res.updated_at){
                 
+                let text ="Records were inserted successfully."; 
+                if(res.comment && res.comment=="yes"){
+                    text = "Comment has been submitted successfully, and it's awaiting admin review"
+                }
                 swal({
                     title:"SUCCESS MESSAGE",
-                    text:"Records were inserted successfully.",
+                    text:text,
                     icon:"success",
                     button:"Ok",
                 });
                 // let url = window.location;
-                window.location.reload();
+                setTimeout(()=>{window.location.reload()}, 2000);;
             }
         },
 
@@ -273,6 +281,41 @@ function previewImage(input){
                 swal({
                     title:"SUCCESS MESSAGE",
                     text:"Record was deleted successfully.",
+                    icon:"success",
+                    button:"Ok",
+                });
+            }
+            
+        },
+        error: function(res){
+            console.log(res.responseJSON.message);
+            swal({
+                title:"Error Message",
+                text:res.responseJSON.message,
+                icon:"error",
+                button:"Ok",
+            })
+        }
+    });
+}
+
+
+function getRequest(route, event){
+    event.preventDefault();
+    console.log(route)
+        $.ajax({
+        url:route,
+        method:'get',
+        headers:{
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success:function(res){
+            console.log(res);
+            if(res ="success"){
+                
+                swal({
+                    title:"SUCCESS MESSAGE",
+                    text:"Visibility Change Successfully.",
                     icon:"success",
                     button:"Ok",
                 });

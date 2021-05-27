@@ -24,16 +24,20 @@ Route::view('/register', "auth.register")->name('register');
 Auth::routes();
 
 // Route::get('/home', [HomeController::class,'index'])->name('home');
-Route::get('/singlepost/{post}', [PostController::class,'show'])->name('userpost.show');
+Route::get('/singlepost/{post}', [ App\Http\Controllers\PostController::class,'show'])->name('userpost.show');
 
 Route::group(["middleware"=>"auth"], function(){
 
     Route::view('/home', "home")->name('home');
-    Route::Resource('/category', CategoryController::class)->only(["index", "create", "store", "udpate", "delete"]);
+    Route::Resource('/category', CategoryController::class)->only(["index", "create", "store", "update", "destroy"]);
+    Route::Resource('/comments', CommentsController::class)->only(["index", "create", "store", "show", "destroy", "edit"]);
     Route::Resource('/post', PostController::class);
     
-    Route::get('/allusers', [UserController::class, 'users'])->name("allusers");
-    Route::delete('/userdelete/{id}', [UserController::class, 'deleteuser'])->name("userdelete");
     
-
+    Route::group(["middleware"=>"admin"], function(){
+        Route::get('/allusers', [UserController::class, 'users'])->name("allusers");
+        Route::get('/userpost/{id}', [UserController::class, 'userpost'])->name("userpost");
+        Route::delete('/userdelete/{id}', [UserController::class, 'deleteuser'])->name("userdelete");
+        
+    });
 });

@@ -129,44 +129,8 @@
    </footer>
    <!-- End Footer -->
 
-   <!-- Javascripts File
-      =============================================================================-->
-
-   <!-- initialize jQuery Library -->
-   <script src="js/jquery-2.0.0.min.js"></script>
-   <!-- Popper JS -->
-   <script src="js/popper.min.js"></script>
-   <!-- Bootstrap jQuery -->
-   <script src="js/bootstrap.min.js"></script>
-   <!-- Owl Carousel -->
-   <script src="js/owl-carousel.2.3.0.min.js"></script>
-   <!-- Waypoint -->
-   <script src="js/waypoints.min.js"></script>
-   <!-- Counter Up -->
-   <script src="js/jquery.counterup.min.js"></script>
-   <!-- Video Popup -->
-   <script src="js/jquery.magnific.popup.js"></script>
-   <!-- Smooth scroll -->
-   <script src="js/smoothscroll.js"></script>
-   <!-- WoW js -->
-   <script src="js/wow.min.js"></script>
-   <!-- Template Custom -->
-   <script src="js/main.js"></script>
-   
-    <script src="js/picturefill.min.js"></script>
-        <script src="js/lightgallery.min.js"></script>
-        <script src="js/lg-pager.min.js"></script>
-        <script src="js/lg-autoplay.min.js"></script>
-        <script src="js/lg-fullscreen.min.js"></script>
-        <script src="js/lg-zoom.min.js"></script>
-        <script src="js/lg-hash.min.js"></script>
-        <script src="js/lg-share.min.js"></script>
-        <script src="assets/js/aos.js"></script>
-        <script>
-            AOS.init();
-         </script>
         <script type="text/javascript">            
-            
+           /* 
             $("#eqsubmit").click(function(e){
                
                 e.preventDefault();
@@ -249,130 +213,12 @@
               
               
               
-              
+*/              
    
     
         </script>
           <!-- <button class="back-to-top fa fa-chevron-up" ></button> -->
 </div>
-
-<!-- External JavaScripts -->
-<!-- <script src="assets/js/jquery.min.js"></script>
-<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-<script src="assets/vendors/counter/waypoints-min.js"></script>
-<script src="assets/vendors/counter/counterup.min.js"></script>
-<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-<script src="assets/vendors/masonry/masonry.js"></script>
-<script src="assets/vendors/masonry/filter.js"></script>
-<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-<script src="assets/js/functions.js"></script>
-<script src="assets/js/contact.js"></script>
-<script src='assets/vendors/switcher/switcher.js'></script>
-<script src="assets/js/myJs.js"></script> -->
-<!-- Revolution JavaScripts Files -->
-<!-- <script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script> -->
-<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<!-- <script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script> -->
-<script>
-jQuery(document).ready(function() {
-	var ttrevapi;
-	var tpj =jQuery;
-	if(tpj("#rev_slider_486_1").revolution == undefined){
-		revslider_showDoubleJqueryError("#rev_slider_486_1");
-	}else{
-		ttrevapi = tpj("#rev_slider_486_1").show().revolution({
-			sliderType:"standard",
-			jsFileLocation:"assets/vendors/revolution/js/",
-			sliderLayout:"fullwidth",
-			dottedOverlay:"none",
-			delay:9000,
-			navigation: {
-				keyboardNavigation:"on",
-				keyboard_direction: "horizontal",
-				mouseScrollNavigation:"off",
-				mouseScrollReverse:"default",
-				onHoverStop:"on",
-				touch:{
-					touchenabled:"on",
-					swipe_threshold: 75,
-					swipe_min_touches: 1,
-					swipe_direction: "horizontal",
-					drag_block_vertical: false
-				}
-				,
-				arrows: {
-					style: "uranus",
-					enable: true,
-					hide_onmobile: false,
-					hide_onleave: false,
-					tmp: '',
-					left: {
-						h_align: "left",
-						v_align: "center",
-						h_offset: 10,
-						v_offset: 0
-					},
-					right: {
-						h_align: "right",
-						v_align: "center",
-						h_offset: 10,
-						v_offset: 0
-					}
-				},
-				
-			},
-			viewPort: {
-				enable:true,
-				outof:"pause",
-				visible_area:"80%",
-				presize:false
-			},
-			responsiveLevels:[1240,1024,778,480],
-			visibilityLevels:[1240,1024,778,480],
-			gridwidth:[1240,1024,778,480],
-			gridheight:[768,600,600,600],
-			lazyType:"none",
-			parallax: {
-				type:"scroll",
-				origo:"enterpoint",
-				speed:400,
-				levels:[5,10,15,20,25,30,35,40,45,50,46,47,48,49,50,55],
-				type:"scroll",
-			},
-			shadow:0,
-			spinner:"off",
-			stopLoop:"off",
-			stopAfterLoops:-1,
-			stopAtSlide:-1,
-			shuffle:"off",
-			autoHeight:"off",
-			hideThumbsOnMobile:"off",
-			hideSliderAtLimit:0,
-			hideCaptionAtLimit:0,
-			hideAllCaptionAtLilmit:0,
-			debugMode:false,
-			fallbacks: {
-				simplifyAll:"off",
-				nextSlideOnWindowFocus:"off",
-				disableFocusListener:false,
-			}
-		});
-	}
-});	
-</script>
 </body>
 
 </html>

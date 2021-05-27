@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Register Users') }}</div>
 
@@ -16,6 +16,7 @@
                             <th>Email</th>
                             <th>Role</th>
                             <th>Date Joined</th>
+                            <th>User Post</th>
                             <th>Action</th>
                             </tr>
                         </thead>
@@ -31,6 +32,7 @@
                             <td>{{$user->email}} </td>
                             <td>{{$user->role}}</td>
                             <td>{{$user->created_at}}</td>
+                            <td><a class="btn btn-primary" href="{{route('userpost', $user->id)}}">User Posts</a></td>
                             <td> 
                                  <button onclick="deletePost('{{$deleteroute}}', '{{$user->id}}', event)" class="btn btn-danger">Delete</button> </td>
                             </tr>

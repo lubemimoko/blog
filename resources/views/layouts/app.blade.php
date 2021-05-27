@@ -46,6 +46,10 @@
                     @php if(Auth::user()->role=="admin"){
                     @endphp
                     <li class="nav-item">
+                                <a class="nav-link" href="{{ route('allusers') }}">{{ __('All Users') }}</a>
+                    </li>
+
+                    <li class="nav-item">
                                 <a class="nav-link" href="{{ route('category.create') }}">{{ __('Category') }}</a>
                     </li>
                     @php } @endphp 

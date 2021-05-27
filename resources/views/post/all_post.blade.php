@@ -16,6 +16,7 @@
                             <th>Title</th>
                             <th>Body</th>
                             <th>User</th>
+                            <th>Comments</th>
                             <th>Action</th>
                             </tr>
                         </thead>
@@ -31,8 +32,9 @@
                             <td><img id="pic{{$post->id}}" src="{{$post->pic}}" height="50px" width="50pX"></td>
                             <td id="title{{$post->id}}">{{$post->title}}</td>
                             <td id="body{{$post->id}}">{{$post->body}} </td>
-                            <td>{{$post->user->name}}</td>
-                            <td> <button id="mod{{$post->id}}" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="editPost({{$post}}, '{{$updateroute}}')">Edit</button> 
+                            <td>{{$post->user->name}}</td>    
+                            <td><a class="btn btn-primary" href="{{route('comments.show', $post->id)}}">Posts Comments</a></td>
+                        <td> <button id="mod{{$post->id}}" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="editPost({{$post}}, '{{$updateroute}}')">Edit</button> 
                                  <button onclick="deletePost('{{$deleteroute}}', '{{$post->id}}', event)" class="btn btn-danger">Delete</button> </td>
                             </tr>
                             @endforeach

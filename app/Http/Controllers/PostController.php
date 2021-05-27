@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Category;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use File;
 use Image;
 
@@ -70,15 +70,18 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
         $post->category = $request->category;
-        $post->pic = 'images/'.$name;
+        $post->pic = $folder."/".$name;
         $post->user_id = $user_id;
         $post->save();
 
         return response()->json($post);
     }
 
-    public function show (Post $post){
-        return $post;
+    public function show ($id){
+        $post = Post::with("comments")->find($id); 
+        $post->categoryName = Category::findorfail($post->category)->first()->name; 
+        
+        return view("post.singlepost", compact("post"));
     }
 
     public function update(Request $request, Post $post)
@@ -136,4 +139,5 @@ class PostController extends Controller
 
         return response()->json($post);
     }
+
 }
